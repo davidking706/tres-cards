@@ -11,7 +11,7 @@ body {
 #container {
   padding: 0 15%;
   width: auto;
-  height: 100dvh;
+  height: 100svh;
   box-sizing: border-box;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -48,7 +48,6 @@ body {
 .card-image {
   display: inline-block;
   width: 5rem;
-  /* background-color: goldenrod; */
 }
 
 .card-info {
@@ -93,6 +92,12 @@ body {
 
 .link-icon path {
   stroke: rgb(128, 128, 128);
+}
+
+@media screen and (min-width:750px) and (max-width:800px) {
+  #container {
+    margin: 8rem 0;
+  }
 }
 
 @media screen and (max-width: 750px) {
